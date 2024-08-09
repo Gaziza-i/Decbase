@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decbase</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo-link">
+            <img src="/icons/decbase-logo.svg" alt="Decbase logo" class="logo">
+        </a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">home</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">project</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">services</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">about</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">blog</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">shop</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="" class="header-item-link">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="sign-button">Sign Up</button>
+    </header>
+    <main class="main">
+        <section class="homepage">
+        <div class="text-block">
+            <h2 class="mini-title">MODERN INTERIOR</h2>
+            <h3 class="homepage-title">Create Your<br>Interior Design.</h3>
+            <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>veniam, quis nostrud exercitation.</p>
+            <button class="homepage-btn btn-medium">Contact</button>
+        </div>
+        <div class="img-wrapper">
+        <img src="/images/homepage-img.jpg" alt="" class="homepage-img img-medium">
+        <img src="/icons/img-frame.svg" alt="" class="img-frame">
+        </div>
+        </section>
+        <div class="background-dotted"></div>
+        <section class="service-slider">
+            <p class="mini-title">WHAT WE DO</p>
+            <h2 class="title-medium">Our Service</h2>
+            <div class="switch">
+            <button class="slider-btn left"><</button>
+            <button class="slider-btn right">></button>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <svg class="slider-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="#000000" onmouseover="this.setAttribute('fill', '#ffffff')" onmouseout="this.setAttribute('fill', '#000000')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_0_132)"/>
+                        <defs>
+                        <pattern id="pattern0_0_132" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_0_132" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_0_132" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                    <div class="slider-card-description">
+                    <h3 class="slider-card-title hover-light">Interior Design</h3>
+                    <p class="p-medium hover-light">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <svg class="slider-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="black" onmouseover="this.setAttribute('fill', '#ffffff')" onmouseout="this.setAttribute('fill', '#000000')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_0_37)"/>
+                        <defs>
+                        <pattern id="pattern0_0_37" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_0_37" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_0_37" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                    <div class="slider-card-description">
+                    <h3 class="slider-card-title hover-light">Architecture</h3>
+                    <p class="p-medium hover-light">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <svg class="slider-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="#000000" onmouseover="this.setAttribute('fill', 'white')" onmouseout="this.setAttribute('fill', '#000000')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_0_133)"/>
+                        <defs>
+                        <pattern id="pattern0_0_133" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_0_133" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_0_133" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAABk9JREFUeJzd23vMHUUZx/HPW1paoArSioJ46UCL92itiEETAsQbMRjRatCgieIfXkjAG97QoAQREo2JiRqDdzQYDGiUoHgvmKKWCokmaEcRS7AqoKVU2vd98Y9nDz097+45u+fsvm3fb7KZc3aenZnzO7szz8w8OwWrVq3SMivwTrwKa/Aw/ohr8Tnc32ZlOeexrpuamrK4zYYUnI6r8Nji+zYswrrieAdeh191UHdjFrVc3sn4Plbi60h4nBDjBHwHR+N6PLfluseiTQEW48tYhvfjHPylL/8OrMfHcRi+gqkW6x+LNgV4JVbj57h8iN1H8Vs8G6e1WP9YNO0DFuOFWFqSd3aR/l70A8PYJPqDNw2x2Yx/NWxfY6ZoNAp8Ah/qrDV7swXH1zFsYxQ4XgxZB4245iVF+gNsHavWerwZx4i+ZKcYVXp3w3r0/2ObccO4FfXugB/i5Q2uOx0/GbfSGtyPw/u+fxCX4ljcNWC7GytyztubVtJ/Bywv0gtx35BrzhFD3XzwIM7HtHCg4O84E48vvn8ATxEjT2MBmNsJXmWuwv2caP4EeAhfLDn/vb7PbxUCjE3VKLBe+RD1oiI9v7DpikOE+/yFkrxtuAT/a6OiKgE+Kzy4Ks5oo/IavK3i/I/xyzYqqBJgiXgGz2yjkhZ5D15q9GgFUkorcG/O+eEqm2GO0DRubNS87jl7tAkppTfgU2IovS+l9ElcXiZE25OhfU5K6WViInYUfidGiMvw9jL7BSeAmG5P4ayc8zq8ADN4V5nxQhTghCK9HnLOt4uhfXVKac7vXYgC9H7TbN+5meL8nOl3FytC+wsppTRTfF5SpIuEGI/QRIA34gkVeTvxTfy7SQs75o6Sc/9IKd2AC3POd1JfgOeInnUYK3FR/fZ1zibhTcIzxRrGQXg9TkspPQ931RWgN1naiCsH8tbhXBw8UXPb58Sc8wyklP6M44R3exnOE3/WuU37gD+ZO0H5jxDgQGA3PiMEWEM3neAR+DAeNWE5s2KR9ZaJW7Q300U6RTcCrMW7WyprRvsC7EUXAvwUJ5n8DpjGrydvznC68gM2dlRu6zQV4BViTb+fxwx8P1aMFEeO26iCGVwhdpM6o64AWTg7Ryr/YbO4vfh8DE5Vc84+gmfZTwS4W+z4LqvI340His+3iJFgSYVtXWbFENspTR6BncVRhwdGm+wf1BVgKT4vnu8yHsTHcGsLbZpX6gqwVuzWDOMP9g8BpkUHWrkO2E9dAXod2nW4YCDvDLGKvM+3ugsuwtE559mRlpoPg9vFiNDPtoZldErO+eoRJrv70y4codW4Go+esJxZsRv91SYXFctei3POu8ryc873pJQuUPgzXQhwiNhtXj7KcATTxnOmrsMzUkrHVe0H5Jw/TXdBUreZfB4wCU8T2+dzlr/KaCrAwea6voeV2C0Td8IkzOC/E5YxkroC9G6l9UZviq7DL3DouI3qq/MSfGTCcoZSV4DNIiDiiIr8Xfbs4f+zsC+LI2rCrIg36pS6AuwwOvCpx53mL4ZgYhbixkgj6gqwEn8Tz2XZsQNnddHArqn7CDwVTxSzvEHPb7nYiX0+rmmvafND00fgWrG+3n+c13aj5pOqO2C3mrOpCo4yuSc4KzrUSdoxkioB3mfPpKEpJ4v4nTY62Cvw3hbKqaRKgK9NUOYWETJf5iE2YQY/mrCMkVQJsEzM7+sugfVzjwi73dd8O6XUe3wqI96qBNggFkEGX2p4Ml47cO6kge+LcIpYRJ2EaeF9Np0P7CjS1wyc32nvoAlUC7BqIK8XlPji4ijjoSI9VcTxtcGVeEvDazaKdxEuFbtUa8R7Sr8pmx7X9QM2iYDlwyvyd9mza7wRF2tnLvCtMa67SexWL80535hSWl2cL31Hqa4As0LROmwXb4XsKzYUaS+stzcvuanMeMHNBXLOW0RU+dqU0nIhxKyKjdYFJ0DBzeLufrXouG/LOZe+q7hQBejd7r0F1Q1VhsP6gEO115u3xdNr2l0jIkbXiH3NypXlKgH+KnaD6i6CzCfTYmpeSc55a0rpYnwDX8o5D27pP0KVAKcogoj2Q7YKb3MUPxN3wneHGVUJsF1EWh+w5JzvNtcbnMOgABvsiaI6EKiKXK1NT4CbhYv7pEkL3AfcinvHvfj/1NNTkGvbO2gAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg>
+                    <div class="slider-card-description">
+                    <h3 class="slider-card-title hover-light">Planning</h3>
+                    <p class="p-medium hover-light">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="img-wrapper">
+                <img class="about-us-img" src="/images/about-us-img.png" alt="" class="homepage-img img-medium">
+                <img src="/icons/frame-2.svg" alt="" class="about-us-img-frame">
+            </div>
+            <div class="text-block">
+                <h2 class="mini-title">about us</h2>
+                <h3 class="title-medium">Interioris The Will<br>of An Epoch Mextreo</h3>
+                <p class="homepage-description p-medium">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form injected
+                    humour, or randomised words which don't look even slightly
+                    believable.If you are going to use a passage of Lorem Ipsum,
+                    sure there isn't anything embarrassing hidden the middleof text.
+                    All the Lorem Ipsum generators on the Internettend to repeat
+                    predefined chunks as necessary,making this the first true
+                    generator on the Internet.</p>
+                <a class="about-us-button btn-medium">Learn more</a>
+            </div>
+        </section>
+        <section class="twenty-years">
+            <div class="text-block">
+                <img class="twenty-img" src="/images/twenty.jpg" alt="">
+                <h3 class="title-medium">Years Of Successful<br>Working<br>The Market</h3>
+                <a class=" btn-medium">Read more</a>
+            </div>
+            <div class="img-wrapper">
+            <img src="/images/img-3.jpg" alt="" class="homepage-img img-medium">
+            <img src="/icons/frame-2.svg" alt="" class="img-frame">
+            </div>
+        </section>
+        <section class="additional-info">
+            <div class="statistic">
+                <h3 class="title-medium">3000+ Completed Work<br>Which WE have Successfully Done</h3>
+                <img src="/images/statistic-img.png" alt="" class="statistic-img">
+            </div>
+            <div class="testimonials">
+                <p class="mini-title">Testimonials</p>
+                <h4 class="title-medium margin-b">Client says about us</h4>
+                <div class="switch">
+                    <button class="slider-btn left"><</button>
+                    <button class="slider-btn right">></button>
+                </div>
+                <div class="test-cards">
+                    <div class="testimonial-card1">
+                        <p class="p-medium"><span class="client-name">Louis Saville</span> /CEO at Google inc</p>
+                        <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                    <div class="testimonial-card2">
+                        <p class="p-medium"><span class="client-name">Rekha Varadwaz</span> /Manager at Nike inc</p>
+                        <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="news-card">
+                    <div class="img-wrapper">
+                        <img src="/images/news1.jpg" alt="" class="news-card-img img-medium">
+                        <img src="/icons/news-frame.svg" alt="" class="news-img-frame">
+                    </div>
+                    <div class="text-block news-card-text-block">
+                        <h3 class="news-card-title">2020 Interior Design Trends</h3>
+                        <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="news-card-button btn-medium">CONTINUE READING....</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-wrapper">
+                        <img src="/images/news2.jpg" alt="" class="news-card-img img-medium">
+                        <img src="/icons/news-frame.svg" alt="" class="news-img-frame">
+                    </div>
+                    <div class="text-block news-card-text-block">
+                        <h3 class="news-card-title">28 Notable Product at ARC Interior Design</h3>
+                        <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="news-card-button btn-medium">CONTINUE READING....</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-form">
+                <h4 class="title-medium">DON’T FORGET TO SIGN UP</h4>
+                <hr class="short-hr">
+                <p class="p-medium">Find out early about all upcoming promotions and new product releases with
+                    our newsletter.</p>
+                <form action="" class="sign-up-form">
+                   <input class="text-input" placeholder="Enter your email address....." type="text">
+                   <input class="submit-input" value="SUBSCRIBE" type="submit">
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="flex">
+            <div class="footer-logo-block">
+                <a href="" class="logo-link">
+                    <img src="/icons/decbase-logo.svg" alt="Decbase logo" class="logo">
+                </a>
+                <p class="p-medium">But i must explain to you all this mistaken idea of dencouncing pleasure.</p>
+            </div>
+            <div class="footer-nav-block">
+                <div class="footer-nav-lists">
+                    <ul class="footer-menu">
+                        <h5 class="footer-menu-title">Quick Links</h5>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">About Our Company</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Services WE provide</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Career & Opportunity</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Privacy & policy</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Contact US</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <h5 class="footer-menu-title">Company</h5>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">About Company</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Our Testimonials</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Latest News</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Our mission</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Get a free Quot</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <h5 class="footer-menu-title">Contact us</h5>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Sagrada Familia, Herba</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">Street Front USA</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">brandoxide@gmail.com</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-text">002-568423591</a></li>
+                    </ul>
+                </div>
+                    <div class="soc1als-block">
+                    <h5 class="footer-menu-title">Follow Us</h5>
+                    <div class="soc1al-icons">
+                        <a href="#" class="icon-link">
+                            <p class="facebook-icon">f</p>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <div class="twitter-icon-wrapper">
+                                <svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </div>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <p class="G-icon">G+</p>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <p class="in-icon">in</p>
+                        </a>
+                    </div>
+            </div>
+            <div class="end-block">
+                <hr class="footer-hr">
+                <p class="end-text p-medium">Copyright @ 2020 <span class="green-color">Brandoxide</span>.all right reserved.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
