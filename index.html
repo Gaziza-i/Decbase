@@ -5,54 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decbase</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <a href="" class="logo-link">
             <img src="/icons/decbase-logo.svg" alt="Decbase logo" class="logo">
         </a>
+    <div class="navbar">
         <nav class="header-menu">
             <ul class="header-menu-list">
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">home</a>
+                    <a href="#home" class="header-item-link">home</a>
                 </li>
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">project</a>
+                    <a href="#project" class="header-item-link">project</a>
                 </li>
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">services</a>
+                    <a href="#services" class="header-item-link">services</a>
                 </li>
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">about</a>
+                    <a href="#about" class="header-item-link">about</a>
                 </li>
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">blog</a>
+                    <a href="#blog" class="header-item-link">blog</a>
                 </li>
                 <li class="header-menu-item">
                     <a href="" class="header-item-link">shop</a>
                 </li>
                 <li class="header-menu-item">
-                    <a href="" class="header-item-link">contact</a>
+                    <a href="#contact" class="header-item-link">contact</a>
                 </li>
             </ul>
         </nav>
+    </div>
+    <div class="header-buttons">
         <button class="sign-button">Sign Up</button>
+        <div class="burger-button" onclick="burgerBtn(this)">
+            <div class="bar"></div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+        </div>
+    </div>
     </header>
     <main class="main">
-        <section class="homepage">
+        <section id="home" class="homepage">
         <div class="text-block">
             <h2 class="mini-title">MODERN INTERIOR</h2>
-            <h3 class="homepage-title">Create Your<br>Interior Design.</h3>
-            <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>veniam, quis nostrud exercitation.</p>
+            <h3 class="homepage-title">Create Your <br> Interior Design.</h3>
+            <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation.</p>
             <button class="homepage-btn btn-medium">Contact</button>
         </div>
-        <div class="img-wrapper">
-        <img src="/images/homepage-img.jpg" alt="" class="homepage-img img-medium">
-        <img src="/icons/img-frame.svg" alt="" class="img-frame">
+        <div class="homepage-img-wrapper">
+        <img src="/images/homepage-img.jpg" alt="" class="homepage-img">
         </div>
         </section>
-        <div class="background-dotted"></div>
-        <section class="service-slider">
+        <section id="services" class="service-slider">
             <p class="mini-title">WHAT WE DO</p>
             <h2 class="title-medium">Our Service</h2>
             <div class="switch">
@@ -77,7 +85,7 @@
                         incididunt ut labore.</p>
                     </div>
                 </div>
-                <div class="slider-card">
+                <div class="slider-card card2">
                     <svg class="slider-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="black" onmouseover="this.setAttribute('fill', '#ffffff')" onmouseout="this.setAttribute('fill', '#000000')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="40" height="40" fill="url(#pattern0_0_37)"/>
                         <defs>
@@ -94,7 +102,7 @@
                         incididunt ut labore.</p>
                     </div>
                 </div>
-                <div class="slider-card">
+                <div class="slider-card card3">
                     <svg class="slider-card-icon" width="40" height="40" viewBox="0 0 40 40" fill="#000000" onmouseover="this.setAttribute('fill', 'white')" onmouseout="this.setAttribute('fill', '#000000')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="40" height="40" fill="url(#pattern0_0_133)"/>
                         <defs>
@@ -113,12 +121,11 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
-            <div class="img-wrapper">
-                <img class="about-us-img" src="/images/about-us-img.png" alt="" class="homepage-img img-medium">
-                <img src="/icons/frame-2.svg" alt="" class="about-us-img-frame">
+        <section id="about" class="about-us">
+            <div class="about-us-img-wrapper ">
+                <img src="/images/about-us-img.png" alt="" class="img-medium about-us-img">
             </div>
-            <div class="text-block">
+            <div class="text-block width-40">
                 <h2 class="mini-title">about us</h2>
                 <h3 class="title-medium">Interioris The Will<br>of An Epoch Mextreo</h3>
                 <p class="homepage-description p-medium">There are many variations of passages of Lorem Ipsum available,
@@ -135,18 +142,38 @@
         <section class="twenty-years">
             <div class="text-block">
                 <img class="twenty-img" src="/images/twenty.jpg" alt="">
-                <h3 class="title-medium">Years Of Successful<br>Working<br>The Market</h3>
+                <h3 class="title-medium">Years Of Successful<br>Working The Market</h3>
                 <a class=" btn-medium">Read more</a>
             </div>
-            <div class="img-wrapper">
-            <img src="/images/img-3.jpg" alt="" class="homepage-img img-medium">
-            <img src="/icons/frame-2.svg" alt="" class="img-frame">
+            <div class="tw-years-img-wrapper">
+            <img src="/images/img-3.jpg" alt="" class="img-medium">
             </div>
         </section>
         <section class="additional-info">
-            <div class="statistic">
-                <h3 class="title-medium">3000+ Completed Work<br>Which WE have Successfully Done</h3>
-                <img src="/images/statistic-img.png" alt="" class="statistic-img">
+            <div id="project" class="statistic">
+                <h3 class="title-medium ta-center">3000+ Completed Work<br>Which WE have Successfully Done</h3>
+                <div class="statistic-cards">
+                    <div class="statistic-card">
+                        <p class="p-medium ta-center">
+                            <span class="span-bold">980</span><br>
+                            Project</p>
+                    </div>
+                    <div class="statistic-card">
+                        <p class="p-medium ta-center">
+                            <span class="span-bold">520</span><br>
+                            Happy Client</p>
+                    </div>
+                    <div class="statistic-card">
+                        <p class="p-medium ta-center">
+                            <span class="span-bold">330</span><br>
+                            Winners</p>
+                    </div>
+                    <div class="statistic-card">
+                        <p class="p-medium ta-center">
+                            <span class="span-bold">120</span><br>
+                            Recoment</p>
+                    </div>
+                </div>
             </div>
             <div class="testimonials">
                 <p class="mini-title">Testimonials</p>
@@ -170,31 +197,35 @@
                     </div>
                 </div>
             </div>
-            <div class="news">
+            <div id="blog" class="news">
+                <div class="news-title-block">
+                <p class="mini-title">LETEST NEWS</p>
+                <h4 class="title-medium">From Our Blog</h4>
+                </div>
+                <div class="news-cards">
                 <div class="news-card">
-                    <div class="img-wrapper">
-                        <img src="/images/news1.jpg" alt="" class="news-card-img img-medium">
-                        <img src="/icons/news-frame.svg" alt="" class="news-img-frame">
+                    <div class="news-img-wrapper">
+                        <img src="/images/news1.jpg" alt="" class="news-card-img">
                     </div>
                     <div class="text-block news-card-text-block">
                         <h3 class="news-card-title">2020 Interior Design Trends</h3>
-                        <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
                         <a class="news-card-button btn-medium">CONTINUE READING....</a>
                     </div>
                 </div>
                 <div class="news-card">
-                    <div class="img-wrapper">
-                        <img src="/images/news2.jpg" alt="" class="news-card-img img-medium">
-                        <img src="/icons/news-frame.svg" alt="" class="news-img-frame">
+                    <div class="news-img-wrapper">
+                        <img src="/images/news2.jpg" alt="" class="news-card-img">
                     </div>
                     <div class="text-block news-card-text-block">
                         <h3 class="news-card-title">28 Notable Product at ARC Interior Design</h3>
-                        <p class="homepage-description p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>incididunt ut labore et dolore magna aliqua.</p>
                         <a class="news-card-button btn-medium">CONTINUE READING....</a>
                     </div>
                 </div>
+                </div>
             </div>
-            <div class="subscribe-form">
+            <div id="contact" class="subscribe-form">
                 <h4 class="title-medium">DON’T FORGET TO SIGN UP</h4>
                 <hr class="short-hr">
                 <p class="p-medium">Find out early about all upcoming promotions and new product releases with
@@ -205,8 +236,9 @@
                 </form>
             </div>
         </section>
-        <footer class="footer">
-            <div class="flex">
+    </main>
+    <footer class="footer">
+        <div class="flex">
             <div class="footer-logo-block">
                 <a href="" class="logo-link">
                     <img src="/icons/decbase-logo.svg" alt="Decbase logo" class="logo">
@@ -214,7 +246,6 @@
                 <p class="p-medium">But i must explain to you all this mistaken idea of dencouncing pleasure.</p>
             </div>
             <div class="footer-nav-block">
-                <div class="footer-nav-lists">
                     <ul class="footer-menu">
                         <h5 class="footer-menu-title">Quick Links</h5>
                         <li class="footer-menu-item"><a href="#" class="footer-text">About Our Company</a></li>
@@ -238,31 +269,31 @@
                         <li class="footer-menu-item"><a href="#" class="footer-text">brandoxide@gmail.com</a></li>
                         <li class="footer-menu-item"><a href="#" class="footer-text">002-568423591</a></li>
                     </ul>
-                </div>
                     <div class="soc1als-block">
-                    <h5 class="footer-menu-title">Follow Us</h5>
-                    <div class="soc1al-icons">
-                        <a href="#" class="icon-link">
-                            <p class="facebook-icon">f</p>
-                        </a>
-                        <a href="#" class="icon-link">
-                            <div class="twitter-icon-wrapper">
-                                <svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        <h5 class="footer-menu-title">Follow Us</h5>
+                        <div class="soc1al-icons">
+                            <a href="#" class="icon-link">
+                                <p class="facebook-icon">f</p>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <div class="twitter-icon-wrapper">
+                                    <svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                                </div>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <p class="G-icon">G+</p>
+                            </a>
+                            <a href="#" class="icon-link">
+                                <p class="in-icon">in</p>
+                            </a>
                         </div>
-                        </a>
-                        <a href="#" class="icon-link">
-                            <p class="G-icon">G+</p>
-                        </a>
-                        <a href="#" class="icon-link">
-                            <p class="in-icon">in</p>
-                        </a>
                     </div>
             </div>
             <div class="end-block">
-                <hr class="footer-hr">
-                <p class="end-text p-medium">Copyright @ 2020 <span class="green-color">Brandoxide</span>.all right reserved.</p>
+                <hr>
+                <p class="ta-center p-medium">Copyright @ 2020 <span class="green-text">Brandoxide</span>.all right reserved.</p>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
 </body>
 </html>
